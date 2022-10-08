@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label {
+        font-weight: bold;
+        background-color: rgba(1, 91, 86, 0.1);
+        color: black;
+        padding: 10px;
+        border-radius: 10px 0px;
+    }
+
+    input {
+        width: 30%;
+        margin: 10px 0px;
+    }
+    .separator {
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.05);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: 1px white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    button:hover {
+        background-color: lightseagreen;
+        color: black;
+        border: 1px black;
+        transition: 0.5s;
+    }
+    .boxext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloco {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+    }
+    input {
+        padding: 5px 10px;
+        outline: none;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        padding: 5px;
+        color: rgb(0, 112, 107);
+    }
+    .ind {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .afesta {
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <div class="boxext">
+        <div class="separator">
+            <label class="ind">01</label>
+            <label for="">Escreva um número: </label>
+            <input name="n1" class="n1" type="number" required>
+            <button onclick="botao()">Enviar</button>
+            <p id="result"></p>
+            <script src="script/001.js"></script>
+        </div>
+
+        <div class="separator">
+            <label class="ind">02</label>
+            <label>Digite a altura do retângulo</label>
+            <input type="number" id="altura">
+            <label>Digite o comprimento do retângulo</label>
+            <input type="number" id="comprimento">
+            <button onclick="botao3()">Enviar</button>
+            <p class="result3"></p>
+            <script src="script/003.js"></script>
+        </div>
+
+        <div class="separator">
+            <label class="ind">03</label>
+            <label>Digite a sua idade: </label>
+            <input id="idade_anos" type="number" placeholder="Em anos" required="required">
+            <label>Digite o restante da sua idade: </label>
+            <input type="number" id="idade_meses" placeholder="Em meses" min="1" max="11">
+            <label>Digite o restate da sua idade: </label>
+            <input type="number" id="idade_dias" placeholder="Em dias" min="1" max="29">
+            <button onclick="botao2()">Enviar</button>
+            <p class="result2"></p>
+            <script src="script/002.js"></script>
+        </div>
+
+        <div class="separator">
+            <label class="ind">04</label>
+            <label class="afesta">Percentual Eleitoral</label>
+            <label for="">Votos válidos</label>
+            <input id="votosval" type="number">
+            <label>Votos nulos</label>
+            <input id="votosnull" type="number">
+            <label>Votos brancos</label>
+            <input type="number" id="votoswhite">
+            <button onclick="botao4()">Enviar</button>
+            <p class="result4"></p>
+            <script src="script/004.js"></script>
+        </div>
+
+        <div class="separator">
+            <label class="ind">05</label>
+            <label class="afesta">Ajuste percentual</label>
+            <label for="">Salário do funcionário</label>
+            <input type="number" id="salário">
+            <label for="">Porcentagem</label>
+            <input type="number" id="perc">
+            <button onclick="botao5()">Enviar</button>
+            <p class="result5"></p>
+            <script src="script/005.js"></script>
+        </div>
+
+        <div class="separator">
+            <label class="ind">06</label>
+            <label>Custo de fábrica do carro</label>
+            <input id="fab" type="number">
+            <button onclick="botao6()">Enviar</button>
+            <p class="result6"></p>
+            <script src="script/006.js"></script>
+        </div>
+        <div class="separator">
+            <label class="ind">08</label>
+            <label for="">Comissão lojista</label>
+            <button onclick="botao7()">Inicar</button>
+            <p class="result7"></p>
+            <script src="script/007.js"></script>
+        </div>
+    </div>
+</body>
+</html>
